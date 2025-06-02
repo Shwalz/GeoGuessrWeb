@@ -1,0 +1,111 @@
+﻿@model GeoGuessrWeb.Models.Location
+@{
+    ViewData["Title"] = "Edit Location";
+    var lat = Model.Latitude.ToString(System.Globalization.CultureInfo.InvariantCulture);
+    var lng = Model.Longitude.ToString(System.Globalization.CultureInfo.InvariantCulture);
+}
+
+<h2>Edit Location</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="City" class="form-label"></label>
+        <input asp-for="City" class="form-control" />
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Country" class="form-label"></label>
+        <input asp-for="Country" class="form-control" />
+        <span asp-validation-for="Country" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Continent" class="form-label"></label>
+        <input asp-for="Continent" class="form-control" />
+        <span asp-validation-for="Continent" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Difficulty" class="form-label"></label>
+        <input asp-for="Difficulty" class="form-control" />
+        <span asp-validation-for="Difficulty" class="text-danger"></span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="Latitude" class="form-label"></label>
+            <input asp-for="Latitude" class="form-control" id="Latitude" />
+            <span asp-validation-for="Latitude" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="Longitude" class="form-label"></label>
+            <input asp-for="Longitude" class="form-control" id="Longitude" />
+            <span asp-validation-for="Longitude" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-4" style="gap: 20px;">
+        <div class="col" style="min-width: 300px;">
+            <div id="yandex-map" style="width: 100%; height: 400px;"></div>
+        </div>
+        <div class="col" style="min-width: 300px;">
+            <iframe id="streetViewFrame"
+                    width="100%" height="400"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyDLKBFsyOd9V-TvMIWl0cVXnsotmF-xKHY&location=@lat,@lng&heading=0&pitch=0&fov=90">
+            </iframe>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ae8eb905-06d7-4e0a-8117-5307a0568794&lang=en_US" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(function () {
+            const lat = parseFloat('@lat');
+            const lng = parseFloat('@lng');
+
+            const map = new ymaps.Map("yandex-map", {
+                center: [lat, lng],
+                zoom: 2,
+                controls: []
+            });
+
+            let marker = new ymaps.Placemark([lat, lng], {}, { preset: 'islands#blueDotIcon' });
+            map.geoObjects.add(marker);
+
+            function updateInputs(coords) {
+                document.getElementById("Latitude").value = coords[0];
+                document.getElementById("Longitude").value = coords[1];
+
+                const iframe = document.getElementById("streetViewFrame");
+                iframe.src = `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyDLKBFsyOd9V-TvMIWl0cVXnsotmF-xKHY&location=${coords[0]},${coords[1]}&heading=0&pitch=0&fov=90`;
+            }
+
+            map.events.add('click', function (e) {
+                const coords = e.get('coords');
+
+                if (marker) {
+                    map.geoObjects.remove(marker);
+                }
+
+                marker = new ymaps.Placemark(coords, {}, { preset: 'islands#blueDotIcon' });
+                map.geoObjects.add(marker);
+
+                updateInputs(coords);
+            });
+        });
+    </script>
+}

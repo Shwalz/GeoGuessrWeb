@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Start";
+}
+
+<h2 class="mb-3">Start Game</h2>
+
+<form method="post" asp-action="Start">
+    <div class="mb-2">
+        <label>Nickname:</label>
+        <input type="text" name="nickname" class="form-control" required />
+    </div>
+    <div class="mb-2">
+        <label>Continent:</label>
+        <select name="continent" class="form-control" required>
+            <option>Europe</option>
+            <option>Asia</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Australia</option>
+            <option>Africa</option>
+        </select>
+    </div>
+    <div class="mb-2">
+        <label>Difficulty:</label>
+        <select name="difficulty" class="form-control" required>
+            <option>easy</option>
+            <option>medium</option>
+            <option>hard</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label>Rounds:</label>
+        <input type="number" name="rounds" min="1" max="10" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Start</button>
+    <a href="/Admin" class="btn btn-outline-secondary ms-3">Admin Panel</a>
+</form>

@@ -1,0 +1,42 @@
+﻿@model GeoGuessrWeb.Models.Location
+
+@{
+    ViewData["Title"] = "Location Details";
+}
+
+<h2>Location Details</h2>
+
+<div class="mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">City</dt>
+        <dd class="col-sm-9">@Model.City</dd>
+
+        <dt class="col-sm-3">Country</dt>
+        <dd class="col-sm-9">@Model.Country</dd>
+
+        <dt class="col-sm-3">Continent</dt>
+        <dd class="col-sm-9">@Model.Continent</dd>
+
+        <dt class="col-sm-3">Difficulty</dt>
+        <dd class="col-sm-9">@Model.Difficulty</dd>
+
+        <dt class="col-sm-3">Latitude</dt>
+        <dd class="col-sm-9">@Model.Latitude</dd>
+
+        <dt class="col-sm-3">Longitude</dt>
+        <dd class="col-sm-9">@Model.Longitude</dd>
+    </dl>
+
+    <h4>Preview</h4>
+    <iframe width="600"
+            height="400"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyDLKBFsyOd9V-TvMIWl0cVXnsotmF-xKHY&location=@Model.Latitude,@Model.Longitude&heading=0&pitch=0&fov=90">
+    </iframe>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    var topPlayers = ViewBag.TopPlayers as List<GeoGuessrWeb.Models.LeaderboardEntry>;
+}
+
+<h2>Dashboard</h2>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card text-bg-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Locations</h5>
+                <p class="card-text display-6">@ViewBag.TotalLocations</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-bg-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Players</h5>
+                <p class="card-text display-6">@ViewBag.TotalPlayers</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-bg-warning mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Average Score</h5>
+                <p class="card-text display-6">@ViewBag.AverageScore</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Top 5 Players</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nickname</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var player in topPlayers)
+        {
+            <tr>
+                <td>@player.Nickname</td>
+                <td>@player.Score</td>
+            </tr>
+        }
+    </tbody>
+</table>

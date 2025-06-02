@@ -1,0 +1,74 @@
+﻿@model List<GeoGuessrWeb.Models.Location>
+
+@{
+    ViewData["Title"] = "Admin Panel";
+    string currentSort = ViewBag.CurrentSort ?? "";
+    string citySort = currentSort == "city_asc" ? "city_desc" : "city_asc";
+    string countrySort = currentSort == "country_asc" ? "country_desc" : "country_asc";
+    string continentSort = currentSort == "continent_asc" ? "continent_desc" : "continent_asc";
+    string searchTerm = ViewBag.SearchTerm ?? "";
+    int currentPage = ViewBag.CurrentPage;
+    int totalPages = ViewBag.TotalPages;
+}
+
+<h2>Locations Admin Panel</h2>
+
+<form method="get" asp-action="Index" class="mb-3 d-flex gap-2">
+    <input type="text" name="searchTerm" class="form-control w-25" value="@searchTerm" placeholder="Search by city or country" />
+    <button type="submit" class="btn btn-primary">Search</button>
+    <a asp-action="Add" class="btn btn-success">Add New</a>
+    <a asp-action="Dashboard" class="btn btn-info mb-3">Dashboard</a>
+
+
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th><a asp-action="Index" asp-route-sortOrder="@citySort" asp-route-searchTerm="@searchTerm">City</a></th>
+            <th><a asp-action="Index" asp-route-sortOrder="@countrySort" asp-route-searchTerm="@searchTerm">Country</a></th>
+            <th><a asp-action="Index" asp-route-sortOrder="@continentSort" asp-route-searchTerm="@searchTerm">Continent</a></th>
+            <th>Difficulty</th>
+            <th>Lat</th>
+            <th>Lng</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var loc in Model)
+        {
+            <tr>
+                <td>@loc.City</td>
+                <td>@loc.Country</td>
+                <td>@loc.Continent</td>
+                <td>@loc.Difficulty</td>
+                <td>@loc.Latitude</td>
+                <td>@loc.Longitude</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@loc.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Details" asp-route-id="@loc.Id" class="btn btn-sm btn-info">Details</a>
+                    <form asp-action="Delete" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@loc.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this location?');">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-between align-items-center">
+    <div>
+        Page @currentPage of @totalPages
+    </div>
+    <div>
+        @if (currentPage > 1)
+        {
+            <a asp-action="Index" asp-route-page="@(currentPage - 1)" asp-route-searchTerm="@searchTerm" asp-route-sortOrder="@currentSort" class="btn btn-outline-secondary btn-sm">Previous</a>
+        }
+        @if (currentPage < totalPages)
+        {
+            <a asp-action="Index" asp-route-page="@(currentPage + 1)" asp-route-searchTerm="@searchTerm" asp-route-sortOrder="@currentSort" class="btn btn-outline-secondary btn-sm">Next</a>
+        }
+    </div>
+</div>

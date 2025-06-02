@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "Play";
+    var location = ViewBag.Location as GeoGuessrWeb.Models.Location;
+    var lat = location?.Latitude.ToString(System.Globalization.CultureInfo.InvariantCulture);
+    var lng = location?.Longitude.ToString(System.Globalization.CultureInfo.InvariantCulture);
+    var resultVisible = ViewBag.ResultVisible is true;
+    var guessedLat = ViewBag.GuessedLat?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? "";
+    var guessedLng = ViewBag.GuessedLng?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? "";
+    var correctLat = ViewBag.CorrectLat?.ToString() ?? lat;
+    var correctLng = ViewBag.CorrectLng?.ToString() ?? lng;
+}
+
+<h2 class="mb-2">Round @ViewBag.Round / @ViewBag.TotalRounds</h2>
+<div id="timer" style="color: darkred; font-weight: bold;">Time left: 90s</div>
+
+@if (resultVisible)
+{
+    <div class="alert alert-info mt-3">
+        <strong>Last Round:</strong><br />
+        Distance: <strong>@ViewBag.Distance</strong> km<br />
+        Score: <strong>@ViewBag.RoundScore</strong><br />
+        Total: <strong>@ViewBag.TotalScore</strong>
+    </div>
+}
+
+<div class="d-flex justify-content-between mb-4 flex-wrap" style="gap: 20px;">
+    <iframe width="600"
+            height="450"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyDLKBFsyOd9V-TvMIWl0cVXnsotmF-xKHY&location=@lat,@lng&heading=0&pitch=0&fov=90">
+    </iframe>
+
+    <div id="yandex-map" style="width: 600px; height: 450px;"></div>
+</div>
+
+<form method="post" asp-controller="Game" asp-action="Guess" id="guessForm">
+    <input type="hidden" name="guessedLat" id="guessedLat" />
+    <input type="hidden" name="guessedLng" id="guessedLng" />
+    <button type="submit" id="checkBtn" class="btn btn-success">
+        @(resultVisible ? "Next Round" : "Check")
+    </button>
+</form>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ae8eb905-06d7-4e0a-8117-5307a0568794&lang=en_US" type="text/javascript"></script>
+<script type="text/javascript">
+    ymaps.ready(function () {
+        const map = new ymaps.Map("yandex-map", {
+            center: [@lat, @lng],
+            zoom: 2,
+            controls: []
+        });
+
+        let guessMarker, correctMarker, polyline;
+        const resultVisible = @resultVisible.ToString().ToLower();
+
+        if (resultVisible) {
+            const guessedLat = parseFloat("@guessedLat");
+            const guessedLng = parseFloat("@guessedLng");
+            const correctLat = parseFloat("@correctLat");
+            const correctLng = parseFloat("@correctLng");
+
+            const userPoint = [guessedLat, guessedLng];
+            const correctPoint = [correctLat, correctLng];
+
+            console.log("RESULT mode:");
+            console.log("Guessed:", guessedLat, guessedLng);
+            console.log("Correct:", correctLat, correctLng);
+
+            guessMarker = new ymaps.Placemark(userPoint, {}, { preset: 'islands#greenDotIcon' });
+            correctMarker = new ymaps.Placemark(correctPoint, {}, { preset: 'islands#redDotIcon' });
+            polyline = new ymaps.Polyline([userPoint, correctPoint], {}, {
+                strokeColor: "#0000FF",
+                strokeWidth: 4
+            });
+
+            map.geoObjects.add(guessMarker);
+            map.geoObjects.add(correctMarker);
+            map.geoObjects.add(polyline);
+            map.setBounds(ymaps.geoQuery([guessMarker, correctMarker]).getBounds(), { checkZoomRange: true });
+        } else {
+            map.events.add('click', function (e) {
+                const coords = e.get('coords');
+
+                if (guessMarker) {
+                    map.geoObjects.remove(guessMarker);
+                }
+
+                guessMarker = new ymaps.Placemark(coords, {}, { preset: 'islands#blueDotIcon' });
+                map.geoObjects.add(guessMarker);
+
+                document.getElementById("guessedLat").value = coords[0];
+                document.getElementById("guessedLng").value = coords[1];
+                console.log("Selected:", coords[0], coords[1]);
+            });
+        }
+
+        document.getElementById("guessForm").addEventListener("submit", function (e) {
+            const btn = document.getElementById("checkBtn");
+            const guessedLat = document.getElementById("guessedLat").value;
+            const guessedLng = document.getElementById("guessedLng").value;
+
+            if (btn.innerText === "Next Round") {
+                e.preventDefault();
+                window.location.href = "/Game/Next";
+            } else {
+                if (!guessedLat || !guessedLng || guessedLat === "0" || guessedLng === "0") {
+                    e.preventDefault();
+                    alert("Please select a point on the map before submitting.");
+                    return false;
+                }
+
+                console.log("Submitting guess:", guessedLat, guessedLng);
+            }
+        });
+
+        // Таймер
+        let seconds = 90;
+        const timerElement = document.getElementById("timer");
+
+        if (!resultVisible) {
+            const countdown = setInterval(() => {
+                seconds--;
+                timerElement.textContent = "Time left: " + seconds + "s";
+
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    alert("Time is up! No guess submitted.");
+                    document.getElementById("guessForm").submit();
+                }
+            }, 1000);
+        } else {
+            timerElement.textContent = "Results shown — timer stopped";
+            timerElement.style.color = "#666";
+        }
+    });
+</script>
+
+<style>
+    .btn-success {
+        font-size: 1.1rem;
+        padding: 8px 20px;
+    }
+
+    iframe {
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    media (max-width: 1200px) {
+        iframe, #yandex-map
+
+    {
+        width: 100% !important;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    }
+</style>

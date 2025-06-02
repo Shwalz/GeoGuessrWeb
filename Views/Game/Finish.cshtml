@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Game Finished";
+    var leaderboard = ViewBag.Leaderboard as List<GeoGuessrWeb.Models.LeaderboardEntry>;
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3 text-center"> Game Finished</h2>
+
+    <div class="alert alert-success">
+        <p><strong>Nickname:</strong> @ViewBag.Nickname</p>
+        <p><strong>Score:</strong> @ViewBag.Score</p>
+    </div>
+
+    <h4 class="mt-4"> Top Players</h4>
+    <table class="table table-bordered table-striped mt-2">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Nickname</th>
+                <th>Best Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (leaderboard != null && leaderboard.Any())
+            {
+                int rank = 1;
+                foreach (var entry in leaderboard)
+                {
+                    <tr>
+                        <td>@rank</td>
+                        <td>@entry.Nickname</td>
+                        <td>@entry.Score</td>
+                    </tr>
+                    rank++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">No leaderboard data available.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-action="Start" asp-controller="Game" class="btn btn-primary mt-3">Play Again</a>
+</div>

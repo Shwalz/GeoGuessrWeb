@@ -1,0 +1,1412 @@
+{
+  "Europe": {
+    "Easy": [
+      {
+        "Id": 1,
+        "Latitude": 48.8584,
+        "Longitude": 2.2945,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 2,
+        "Latitude": 51.5007,
+        "Longitude": -0.1246,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 3,
+        "Latitude": 41.9028,
+        "Longitude": 12.4964,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 4,
+        "Latitude": 48.2082,
+        "Longitude": 16.3738,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 5,
+        "Latitude": 40.4168,
+        "Longitude": -3.7038,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 6,
+        "Latitude": 52.52,
+        "Longitude": 13.405,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 7,
+        "Latitude": 45.4642,
+        "Longitude": 9.19,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 8,
+        "Latitude": 50.0755,
+        "Longitude": 14.4378,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 9,
+        "Latitude": 52.2297,
+        "Longitude": 21.0122,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 10,
+        "Latitude": 47.4979,
+        "Longitude": 19.0402,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Easy"
+      }
+    ],
+    "Medium": [
+      {
+        "Id": 11,
+        "Latitude": 43.7696,
+        "Longitude": 11.2558,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 12,
+        "Latitude": 46.2044,
+        "Longitude": 6.1432,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 13,
+        "Latitude": 50.9375,
+        "Longitude": 6.9603,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 14,
+        "Latitude": 59.3293,
+        "Longitude": 18.0686,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 15,
+        "Latitude": 55.9533,
+        "Longitude": -3.1883,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 16,
+        "Latitude": 53.3498,
+        "Longitude": -6.2603,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 17,
+        "Latitude": 48.5734,
+        "Longitude": 7.7521,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 18,
+        "Latitude": 44.8378,
+        "Longitude": -0.5792,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 19,
+        "Latitude": 51.4545,
+        "Longitude": -2.5879,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 20,
+        "Latitude": 51.1657,
+        "Longitude": 10.4515,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Medium"
+      }
+    ],
+    "Hard": [
+      {
+        "Id": 21,
+        "Latitude": 46.7712,
+        "Longitude": 23.6236,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 22,
+        "Latitude": 59.437,
+        "Longitude": 24.7536,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 23,
+        "Latitude": 54.6872,
+        "Longitude": 25.2797,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 24,
+        "Latitude": 42.4304,
+        "Longitude": 19.2594,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 25,
+        "Latitude": 56.9496,
+        "Longitude": 24.1052,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 26,
+        "Latitude": 47.0105,
+        "Longitude": 28.8638,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 27,
+        "Latitude": 43.2545,
+        "Longitude": 76.9285,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 28,
+        "Latitude": 45.2671,
+        "Longitude": 19.8335,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 29,
+        "Latitude": 39.9334,
+        "Longitude": 32.8597,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 30,
+        "Latitude": 35.6895,
+        "Longitude": 33.3823,
+        "City": null,
+        "Country": null,
+        "Continent": "Europe",
+        "Difficulty": "Hard"
+      }
+    ],
+    "easy": [
+      {
+        "Id": 151,
+        "Latitude": 52.167918937765506,
+        "Longitude": 22.271518523803756,
+        "City": "Siedlce",
+        "Country": "Poland",
+        "Continent": "Europe",
+        "Difficulty": "easy"
+      },
+      {
+        "Id": 152,
+        "Latitude": 49.79217,
+        "Longitude": 23.151369,
+        "City": "Mostyska",
+        "Country": "Ukraine",
+        "Continent": "Europe",
+        "Difficulty": "easy"
+      }
+    ]
+  },
+  "Asia": {
+    "Easy": [
+      {
+        "Id": 31,
+        "Latitude": 35.6586,
+        "Longitude": 139.7454,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 32,
+        "Latitude": 31.2304,
+        "Longitude": 121.4737,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 33,
+        "Latitude": 28.6139,
+        "Longitude": 77.209,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 34,
+        "Latitude": 39.9042,
+        "Longitude": 116.4074,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 35,
+        "Latitude": 13.7563,
+        "Longitude": 100.5018,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 36,
+        "Latitude": 37.5665,
+        "Longitude": 126.978,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 37,
+        "Latitude": 23.1291,
+        "Longitude": 113.2644,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 38,
+        "Latitude": 1.3521,
+        "Longitude": 103.8198,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 39,
+        "Latitude": 22.3193,
+        "Longitude": 114.1694,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 40,
+        "Latitude": 34.0522,
+        "Longitude": 135.7681,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Easy"
+      }
+    ],
+    "Medium": [
+      {
+        "Id": 41,
+        "Latitude": 34.6937,
+        "Longitude": 135.5023,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 42,
+        "Latitude": 24.8607,
+        "Longitude": 67.0011,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 43,
+        "Latitude": 35.6895,
+        "Longitude": 139.6917,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 44,
+        "Latitude": 19.076,
+        "Longitude": 72.8777,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 45,
+        "Latitude": 41.0082,
+        "Longitude": 28.9784,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 46,
+        "Latitude": 25.2048,
+        "Longitude": 55.2708,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 47,
+        "Latitude": 29.7604,
+        "Longitude": 95.3698,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 48,
+        "Latitude": 35.8617,
+        "Longitude": 104.1954,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 49,
+        "Latitude": 30.0444,
+        "Longitude": 31.2357,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 50,
+        "Latitude": 26.9124,
+        "Longitude": 75.7873,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Medium"
+      }
+    ],
+    "Hard": [
+      {
+        "Id": 51,
+        "Latitude": 25.276987,
+        "Longitude": 55.296249,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 52,
+        "Latitude": 7.8731,
+        "Longitude": 80.7718,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 53,
+        "Latitude": 21.0278,
+        "Longitude": 105.8342,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 54,
+        "Latitude": 33.6844,
+        "Longitude": 73.0479,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 55,
+        "Latitude": 14.5995,
+        "Longitude": 120.9842,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 56,
+        "Latitude": 3.139,
+        "Longitude": 101.6869,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 57,
+        "Latitude": 17.385,
+        "Longitude": 78.4867,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 58,
+        "Latitude": 24.7136,
+        "Longitude": 46.6753,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 59,
+        "Latitude": 35.0116,
+        "Longitude": 135.7681,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 60,
+        "Latitude": 13.0827,
+        "Longitude": 80.2707,
+        "City": null,
+        "Country": null,
+        "Continent": "Asia",
+        "Difficulty": "Hard"
+      }
+    ]
+  },
+  "North America": {
+    "Easy": [
+      {
+        "Id": 61,
+        "Latitude": 40.6892,
+        "Longitude": -74.0445,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 62,
+        "Latitude": 34.0522,
+        "Longitude": -118.2437,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 63,
+        "Latitude": 45.4215,
+        "Longitude": -75.6995,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 64,
+        "Latitude": 25.7617,
+        "Longitude": -80.1918,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 65,
+        "Latitude": 29.4241,
+        "Longitude": -98.4936,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 66,
+        "Latitude": 36.1699,
+        "Longitude": -115.1398,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 67,
+        "Latitude": 43.6532,
+        "Longitude": -79.3832,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 68,
+        "Latitude": 38.9072,
+        "Longitude": -77.0369,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 69,
+        "Latitude": 41.8781,
+        "Longitude": -87.6298,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 70,
+        "Latitude": 32.7767,
+        "Longitude": -96.797,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Easy"
+      }
+    ],
+    "Medium": [
+      {
+        "Id": 71,
+        "Latitude": 29.7604,
+        "Longitude": -95.3698,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 72,
+        "Latitude": 39.9526,
+        "Longitude": -75.1652,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 73,
+        "Latitude": 33.4484,
+        "Longitude": -112.074,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 74,
+        "Latitude": 39.7684,
+        "Longitude": -86.1581,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 75,
+        "Latitude": 37.7749,
+        "Longitude": -122.4194,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 76,
+        "Latitude": 42.3601,
+        "Longitude": -71.0589,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 77,
+        "Latitude": 35.2271,
+        "Longitude": -80.8431,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 78,
+        "Latitude": 44.9778,
+        "Longitude": -93.265,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 79,
+        "Latitude": 36.1627,
+        "Longitude": -86.7816,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 80,
+        "Latitude": 40.7608,
+        "Longitude": -111.891,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Medium"
+      }
+    ],
+    "Hard": [
+      {
+        "Id": 81,
+        "Latitude": 49.2827,
+        "Longitude": -123.1207,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 82,
+        "Latitude": 19.4326,
+        "Longitude": -99.1332,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 83,
+        "Latitude": 38.2527,
+        "Longitude": -85.7585,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 84,
+        "Latitude": 43.0389,
+        "Longitude": -87.9065,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 85,
+        "Latitude": 35.1495,
+        "Longitude": -90.049,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 86,
+        "Latitude": 29.9511,
+        "Longitude": -90.0715,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 87,
+        "Latitude": 39.7392,
+        "Longitude": -104.9903,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 88,
+        "Latitude": 32.7157,
+        "Longitude": -117.1611,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 89,
+        "Latitude": 39.1031,
+        "Longitude": -84.512,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 90,
+        "Latitude": 45.5122,
+        "Longitude": -122.6587,
+        "City": null,
+        "Country": null,
+        "Continent": "North America",
+        "Difficulty": "Hard"
+      }
+    ]
+  },
+  "South America": {
+    "Easy": [
+      {
+        "Id": 91,
+        "Latitude": -22.9068,
+        "Longitude": -43.1729,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 92,
+        "Latitude": -34.6037,
+        "Longitude": -58.3816,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 93,
+        "Latitude": -12.0464,
+        "Longitude": -77.0428,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 94,
+        "Latitude": -33.4489,
+        "Longitude": -70.6693,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 95,
+        "Latitude": -8.0476,
+        "Longitude": -34.877,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 96,
+        "Latitude": -12.9711,
+        "Longitude": -38.5108,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 97,
+        "Latitude": -25.2637,
+        "Longitude": -57.5759,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 98,
+        "Latitude": -16.5,
+        "Longitude": -68.15,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 99,
+        "Latitude": 4.7109,
+        "Longitude": -74.0721,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 100,
+        "Latitude": -0.1807,
+        "Longitude": -78.4678,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Easy"
+      }
+    ],
+    "Medium": [
+      {
+        "Id": 101,
+        "Latitude": -34.6118,
+        "Longitude": -58.4173,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 102,
+        "Latitude": -22.9707,
+        "Longitude": -43.1823,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 103,
+        "Latitude": -3.7319,
+        "Longitude": -38.5267,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 104,
+        "Latitude": -9.6658,
+        "Longitude": -35.735,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 105,
+        "Latitude": -1.4558,
+        "Longitude": -48.4902,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 106,
+        "Latitude": -7.1153,
+        "Longitude": -34.861,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 107,
+        "Latitude": -5.7945,
+        "Longitude": -35.211,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 108,
+        "Latitude": -15.7797,
+        "Longitude": -47.9297,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 109,
+        "Latitude": -10.9472,
+        "Longitude": -37.0731,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 110,
+        "Latitude": -7.2291,
+        "Longitude": -35.8808,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Medium"
+      }
+    ],
+    "Hard": [
+      {
+        "Id": 111,
+        "Latitude": -16.6809,
+        "Longitude": -49.2533,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 112,
+        "Latitude": -8.7547,
+        "Longitude": -63.8735,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 113,
+        "Latitude": -3.119,
+        "Longitude": -60.0217,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 114,
+        "Latitude": -2.5307,
+        "Longitude": -44.3068,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 115,
+        "Latitude": -6.8885,
+        "Longitude": -38.5614,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 116,
+        "Latitude": -4.9709,
+        "Longitude": -39.0167,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 117,
+        "Latitude": -19.9208,
+        "Longitude": -43.9378,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 118,
+        "Latitude": -27.5969,
+        "Longitude": -48.5495,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 119,
+        "Latitude": -2.5123,
+        "Longitude": -56.2624,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 120,
+        "Latitude": -29.6868,
+        "Longitude": -53.8069,
+        "City": null,
+        "Country": null,
+        "Continent": "South America",
+        "Difficulty": "Hard"
+      }
+    ]
+  },
+  "Africa": {
+    "Easy": [
+      {
+        "Id": 121,
+        "Latitude": 30.0444,
+        "Longitude": 31.2357,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 122,
+        "Latitude": -1.2921,
+        "Longitude": 36.8219,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 123,
+        "Latitude": -26.2041,
+        "Longitude": 28.0473,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 124,
+        "Latitude": -33.9249,
+        "Longitude": 18.4241,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 125,
+        "Latitude": -17.8249,
+        "Longitude": 31.053,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 126,
+        "Latitude": -29.8587,
+        "Longitude": 31.0218,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 127,
+        "Latitude": 9.0579,
+        "Longitude": 7.4951,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 128,
+        "Latitude": 5.6037,
+        "Longitude": -0.187,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 129,
+        "Latitude": 6.5244,
+        "Longitude": 3.3792,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      },
+      {
+        "Id": 130,
+        "Latitude": 7.3697,
+        "Longitude": 12.3547,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Easy"
+      }
+    ],
+    "Medium": [
+      {
+        "Id": 131,
+        "Latitude": -4.0435,
+        "Longitude": 39.6682,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 132,
+        "Latitude": 14.7167,
+        "Longitude": -17.4677,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 133,
+        "Latitude": 13.5026,
+        "Longitude": 2.1125,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 134,
+        "Latitude": 6.3159,
+        "Longitude": -10.8074,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 135,
+        "Latitude": 4.8594,
+        "Longitude": 31.5713,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 136,
+        "Latitude": 0.3476,
+        "Longitude": 32.5825,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 137,
+        "Latitude": 11.5564,
+        "Longitude": 104.9282,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 138,
+        "Latitude": 15.5007,
+        "Longitude": 32.5599,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 139,
+        "Latitude": -1.9579,
+        "Longitude": 30.1127,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      },
+      {
+        "Id": 140,
+        "Latitude": -6.7924,
+        "Longitude": 39.2083,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Medium"
+      }
+    ],
+    "Hard": [
+      {
+        "Id": 141,
+        "Latitude": 0.3136,
+        "Longitude": 32.5811,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 142,
+        "Latitude": -3.3869,
+        "Longitude": 29.3679,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 143,
+        "Latitude": -11.2027,
+        "Longitude": 17.8739,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 144,
+        "Latitude": 12.6392,
+        "Longitude": -8.0029,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 145,
+        "Latitude": 15.4542,
+        "Longitude": 18.7322,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 146,
+        "Latitude": 9.145,
+        "Longitude": 40.4897,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 147,
+        "Latitude": 15.5007,
+        "Longitude": 32.5599,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 148,
+        "Latitude": 8.9806,
+        "Longitude": 38.7578,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 149,
+        "Latitude": -20.3484,
+        "Longitude": 57.5522,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      },
+      {
+        "Id": 150,
+        "Latitude": 17.5707,
+        "Longitude": -3.9962,
+        "City": null,
+        "Country": null,
+        "Continent": "Africa",
+        "Difficulty": "Hard"
+      }
+    ]
+  }
+}

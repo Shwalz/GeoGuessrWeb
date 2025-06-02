@@ -1,0 +1,120 @@
+﻿@model GeoGuessrWeb.Models.Location
+@{
+    ViewData["Title"] = "Add Location";
+}
+
+<h2 class="mb-3">Add Location</h2>
+
+<form asp-action="Add" method="post" id="addLocationForm">
+    <div class="form-group mb-2">
+        <label asp-for="Latitude"></label>
+        <input asp-for="Latitude" class="form-control" id="Latitude" />
+        <span asp-validation-for="Latitude" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Longitude"></label>
+        <input asp-for="Longitude" class="form-control" id="Longitude" />
+        <span asp-validation-for="Longitude" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="City"></label>
+        <input asp-for="City" class="form-control" />
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Country"></label>
+        <input asp-for="Country" class="form-control" />
+        <span asp-validation-for="Country" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Continent"></label>
+        <select asp-for="Continent" class="form-control">
+            <option>Europe</option>
+            <option>Asia</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Africa</option>
+            <option>Oceania</option>
+        </select>
+        <span asp-validation-for="Continent" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Difficulty"></label>
+        <select asp-for="Difficulty" class="form-control">
+            <option>easy</option>
+            <option>medium</option>
+            <option>hard</option>
+        </select>
+        <span asp-validation-for="Difficulty" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<hr />
+<h4>Click on the map to select coordinates:</h4>
+<div class="row">
+    <div class="col-md-6">
+        <div id="previewMap" style="width: 100%; height: 400px;"></div>
+    </div>
+    <div class="col-md-6">
+        <iframe id="streetview"
+                width="100%"
+                height="400"
+                style="border:0; border-radius: 8px;"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="">
+        </iframe>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ae8eb905-06d7-4e0a-8117-5307a0568794&lang=en_US"></script>
+    <script>
+        let previewMap, marker;
+
+        ymaps.ready(function () {
+            previewMap = new ymaps.Map("previewMap", {
+                center: [20, 0],
+                zoom: 2,
+                controls: []
+            });
+
+            function updateMarker(lat, lng) {
+                const coords = [lat, lng];
+
+                if (marker) previewMap.geoObjects.remove(marker);
+
+                marker = new ymaps.Placemark(coords, {}, {
+                    preset: 'islands#redDotIcon'
+                });
+
+                previewMap.geoObjects.add(marker);
+                previewMap.setCenter(coords, 5);
+
+                const streetUrl = `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyDLKBFsyOd9V-TvMIWl0cVXnsotmF-xKHY&location=${lat},${lng}&heading=0&pitch=0&fov=90`;
+                document.getElementById("streetview").src = streetUrl;
+            }
+
+            previewMap.events.add('click', function (e) {
+                const coords = e.get('coords');
+                document.getElementById("Latitude").value = coords[0].toFixed(6);
+                document.getElementById("Longitude").value = coords[1].toFixed(6);
+                updateMarker(coords[0], coords[1]);
+            });
+
+            document.getElementById("Latitude").addEventListener("input", () => {
+                const lat = parseFloat(document.getElementById("Latitude").value);
+                const lng = parseFloat(document.getElementById("Longitude").value);
+                if (!isNaN(lat) && !isNaN(lng)) updateMarker(lat, lng);
+            });
+
+            document.getElementById("Longitude").addEventListener("input", () => {
+                const lat = parseFloat(document.getElementById("Latitude").value);
+                const lng = parseFloat(document.getElementById("Longitude").value);
+                if (!isNaN(lat) && !isNaN(lng)) updateMarker(lat, lng);
+            });
+        });
+    </script>
+}
